@@ -1,17 +1,7 @@
 @use '../utils/vars';
-@import "../components/activities";
-@import "../components/buttons";
-@import "../components/clients";
-@import "../components/col-4";
-@import "../components/contact-form";
-@import "../components/team";
-@import "../components/footer";
-@import "../components/headline-content";
-@import "../components/modal-window";
-@import "../components/mobile-menu";
-@import "../components/navigation";
-@import "../components/page-header";
-@import "../components/projects-gallery";
+
+@import "../components/blog";
+@import "../components/carousel";
 
 
 
@@ -35,9 +25,7 @@ li {
     list-style-type: none;
 }
 
-h2 {
-   margin-bottom: 50px;
-}
+
 /* transition for all svg images */
 path { 
    transition: fill .25s cubic-bezier(0.4, 0, 0.2, 1); 
@@ -49,27 +37,6 @@ path {
     padding: vars.$padding-zero;
 }
 
-/* section h2 style and padding */
-.section {
-    padding: vars.$section-padding; 
 
-    @media screen and (max-width: 480px) {
-        padding: vars.$section-padding-mobile;
-    }
-}
-.section {
-
-    h2 { 
-    text-align: center;
-    font-size: vars.$section-h2-font-size;
-    line-height: vars.$section-h2-line-heigh;
-    margin-top: vars.$section-h2-margin-top; 
-
-    // h2 in section tags for mobile versions
-    @media screen and (max-width: 768px) {
-        font-size: vars.$section-h2-font-size-mobile;
-    }
-    }  
-}
 
 
