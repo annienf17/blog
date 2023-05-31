@@ -1,0 +1,102 @@
+/* header style */
+.header {
+        border-bottom: 1px solid vars.$color-border;
+        height: 80px;
+        padding-top: 16px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+// height header for mobile version
+        @media screen and (max-width: 767px) {
+            height: 60px;   
+        }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            padding-top: 5px;  
+        }
+       
+        /* logo top and footer styles */
+&__logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: vars.$letter-spacing-medium;
+    transition: .25s cubic-bezier(0.4, 0, 0.2, 1); 
+    color: vars.$color-text;
+
+    &--label,
+    &:hover {
+        color: vars.$color-blue;
+    } 
+} 
+} 
+
+/* horizontal align ul lists */
+.header { 
+    .container {
+        display: flex;
+        justify-content: space-between;  
+
+       &__right {
+            display: flex;
+            gap: 50px; 
+
+            @media screen and (min-width: 768px) and (max-width: 1199px) {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }  
+        
+        &__left {
+            display: flex;
+            align-items: center;
+            gap: 43px;  
+        } 
+        } 
+}
+
+/* logo and top menu */
+
+
+/* header links style  */
+.contact {
+   
+    &__item {
+        display: flex;
+        align-items: center; 
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }      
+        
+        &:hover {
+            --color2: vars.$color-middle-grey;
+            fill: vars.$color-blue;
+            transition: .25s cubic-bezier(0.4, 0, 0.2, 1); 
+        }
+    }
+
+    &__icon { 
+        margin-right: 10px; 
+        --color2: vars.$color-middle-grey;
+        
+        &:hover {
+            fill: vars.$color-blue;
+            transition: .25s cubic-bezier(0.4, 0, 0.2, 1); 
+        }
+    }
+
+    &__link {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.1;
+        letter-spacing: vars.$letter-spacing-small;
+        color: vars.$color-middle-grey;
+
+        &:hover {
+            color: vars.$color-blue;
+            transition: .25s cubic-bezier(0.4, 0, 0.2, 1); 
+        }
+    }  
+}
+
